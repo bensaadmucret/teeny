@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="src/autoload.php">
+    <testsuites>
+        <testsuite name="money">
+            <file>tests/teeny/AppTest.php</file>
+            <file>tests/teeny/RouterTest</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
