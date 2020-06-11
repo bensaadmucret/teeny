@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae9b2d58-c232-446c-9725-0ee0e33e985b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -316,12 +315,12 @@
       <option name="presentableId" value="Default" />
       <updated>1591807241311</updated>
       <workItem from="1591807243854" duration="3683000" />
-      <workItem from="1591821730311" duration="17085000" />
+      <workItem from="1591821730311" duration="17139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20768000" />
+    <option name="totallyTimeSpent" value="20822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
