@@ -2,7 +2,6 @@
 <phpunit bootstrap="vendor/autoload.php">
     <testsuites>
         <testsuite name="teeny">
-            <file>tests/teeny/AppTest.php</file>
             <file>tests/teeny/RouterTest.php</file>
         </testsuite>
     </testsuites>
