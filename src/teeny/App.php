@@ -8,6 +8,17 @@ use Psr\Http\Message\ServerRequestInterface;
 
 class App
 {
+    private $modules = [];
+   
+    /**
+    * @var array string[] $modules Liste des modules à charger
+    */
+    public function __construct()
+    {
+        foreach ($modules as $module) {
+            $this->modules[] =  new $module();
+        }
+    }
 
     /**
      * Supprime le slash de fin si il excite
@@ -18,15 +29,11 @@ class App
      */
     public function run(ServerRequestInterface $request): ResponseInterface
     {
-        $uri = $request->getUri()->getPath();
-        if (!empty($uri)&&$uri[-1] === "/") {
-            return (new Response())
-                ->withStatus(301)
-                ->withHeader('Location', substr($uri, 0, -1));
+        $Middleware = $route->getCallback();
+        $callback = $Middleware->getCallback();
+        if (is_string($callback)) {
+            $callback = $this->container->get($callback);
         }
-    
-        $response = new Response();
-        $response->getBody()->write('Bonjour à tous !');
-        return $response;
+        $response = call_user_func_array($callback, [$request]);
     }
 }
