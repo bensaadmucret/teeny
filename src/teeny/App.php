@@ -33,7 +33,7 @@ class App
      */
     public function run(ServerRequestInterface $request): ResponseInterface
     {
-        $route = new Route('/blog', function () { return 'hello'; }, ['blog']);
+        $route = new Route('/blog', function(){echo 'hello';}, []);
         $Middleware = $route->getCallback();
         $callback = $Middleware->getCallback();
         if (is_string($callback)) {
