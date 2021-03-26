@@ -23,6 +23,7 @@ class Router
     public function __construct()
     {
         $this->router = new FastRouteRouter();
+        
     }
 
     /**
@@ -31,7 +32,9 @@ class Router
      * @param string $name
      */
     public function get(string $path, $callable, string $name)
+
     {
+       
         $this->router->addRoute(new Mezzio($path, new MiddlewareApp($callable), ['GET'], $name));
     }
 
@@ -42,7 +45,8 @@ class Router
     public function match(ServerRequestInterface $request): ?Route
     {
         $result = $this->router->match($request);
-        if ($result->isSuccess()) {
+        var_dump($result);
+        if ($result-> isSuccess()) {
             return new Route(
                 $result->getMatchedRouteName(),
                 $result->getMatchedRoute()->getMiddleware()->getCallback(),

@@ -2,6 +2,10 @@
 
 namespace teeny;
 
+
+
+
+use teeny\Router\Route;
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -15,9 +19,9 @@ class App
     */
     public function __construct()
     {
-       // foreach ($modules as $module) {
-            $this->modules[] =  new $module();
-       // }
+       /*foreach ($modules as $module) {
+           $this->modules[] =  new $module();
+      }*/
     }
 
     /**
@@ -29,6 +33,7 @@ class App
      */
     public function run(ServerRequestInterface $request): ResponseInterface
     {
+        $route = new Route('/blog', function () { return 'hello'; }, ['blog']);
         $Middleware = $route->getCallback();
         $callback = $Middleware->getCallback();
         if (is_string($callback)) {

@@ -1,5 +1,5 @@
 <?php
-namespace tests\teeny;
+namespace tests;
 
 use teeny\App;
 use PHPUnit\Framework\TestCase;
@@ -15,7 +15,7 @@ class AppTest extends TestCase{
     public function test_Redirect_Trailing_Slash(){
 
         $app = new App();
-        $request = new ServerRequest('GET', '/test/');
+        $request = new ServerRequest('GET', '/test/', );
         $response =  $app->run($request);
         var_dump($response);
         $this->assertContains('/test', $response->getHeader('Location'));

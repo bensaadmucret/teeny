@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Fri Mar 26 2021 19:56:19 GMT+0100 (Central European Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/teeny/App.php
+* tests/teeny/AppTest.php
+* tests/teeny/RouterTest.php
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+
+
+Renamed files:
