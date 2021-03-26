@@ -4,6 +4,7 @@
     <list default="true" id="ae9b2d58-c232-446c-9725-0ee0e33e985b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/teeny/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/teeny/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/teeny/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/teeny/Router.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,8 +182,12 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Router.php">
+  <component name="RunManager" selected="PHPUnit.AppTest.test_Redirect_Trailing_Slash">
     <configuration name="Router.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/teeny/teeny/Router.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="AppTest.test_Redirect_Trailing_Slash" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="tests\AppTest" file="$PROJECT_DIR$/tests/teeny/AppTest.php" method="test_Redirect_Trailing_Slash" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -201,9 +206,11 @@
     <list>
       <item itemvalue="JavaScript Debug.Router.php" />
       <item itemvalue="PHPUnit.phpunit.xml.dist" />
+      <item itemvalue="PHPUnit.AppTest.test_Redirect_Trailing_Slash" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AppTest.test_Redirect_Trailing_Slash" />
         <item itemvalue="JavaScript Debug.Router.php" />
       </list>
     </recent_temporary>
@@ -218,7 +225,7 @@
       <updated>1591807241311</updated>
       <workItem from="1591807243854" duration="3683000" />
       <workItem from="1591821730311" duration="17139000" />
-      <workItem from="1616786430413" duration="1081000" />
+      <workItem from="1616786430413" duration="2038000" />
     </task>
     <servers />
   </component>

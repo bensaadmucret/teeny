@@ -28,17 +28,17 @@ class App
      * Supprime le slash de fin si il excite
      *
      * @param ServerRequestInterface $request
-     *
+     * @param $route
      * @return ResponseInterface
      */
-    public function run(ServerRequestInterface $request): ResponseInterface
+    public function run(ServerRequestInterface $request, $route ): ResponseInterface
     {
-        $route = new Route('/blog', function(){echo 'hello';}, []);
-        $Middleware = $route->getCallback();
-        $callback = $Middleware->getCallback();
+
+        $callback = $route->getCallback();
         if (is_string($callback)) {
             $callback = $this->container->get($callback);
         }
         $response = call_user_func_array($callback, [$request]);
+        return  $response;
     }
 }

@@ -45,7 +45,6 @@ class Router
     public function match(ServerRequestInterface $request): ?Route
     {
         $result = $this->router->match($request);
-        var_dump($result);
         if ($result-> isSuccess()) {
             return new Route(
                 $result->getMatchedRouteName(),
