@@ -15,9 +15,9 @@ class App
     */
     public function __construct()
     {
-        foreach ($modules as $module) {
+       // foreach ($modules as $module) {
             $this->modules[] =  new $module();
-        }
+       // }
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace test\teeny;
+namespace tests\teeny;
 
 use teeny\Router;
 use GuzzleHttp\Psr7\ServerRequest;
