@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Fri Mar 26 2021 21:26:38 GMT+0100 (Central European Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .idea/symfony2.xml
+* .idea/workspace.xml
+* src/teeny/App.php
+* src/teeny/Router.php
+
+
+Created files:
+* .autogit/logs/log-26-2-2021-20-56-29.txt
+
+
+Deleted files:
+
+
+Renamed files:
